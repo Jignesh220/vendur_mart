@@ -28,7 +28,7 @@ export default class Nav extends Component {
                 <div class="collapse navbar-collapse">
                     
                     <a href=" " className="btn border rounded border-warning navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
-                        <b>Pharmaceuticals & Drugs</b> 
+                        <b>Pharmaceuticals</b> 
                     </a>
 
                     <a href=" " className="btn border rounded border-warning navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
