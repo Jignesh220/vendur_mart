@@ -22,16 +22,7 @@ export default function Header() {
             </div>
                 
                 <div className="container-fluid text-fluid justify-content-end" >
-                    <Link to="" className="nav-link text-white">
-                        <b>Home</b>
-                    </Link>
-                    <Link to="" className="nav-link text-white">
-                        <b>Contact</b>
-                    </Link>
-                    <Link to="" className="nav-link text-white">
-                        <b>About</b>
-                    </Link>
-
+                    
                     <Link to="" className="nav-link text-dark zoom">
                         <img src={Search} alt="logo goes here mx-auto" width="30px"/>
                     </Link> 
