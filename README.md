@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-    <img alt="Gatsby" src="https://drive.google.com/file/d/1dwNXL4SMJ-jpHRvMRoX-xwyJ1Qzhg4Dw/view?usp=sharing" width="60" />
+    <img alt="Gatsby" src="https://github.com/Jignesh220/vendur_mart/blob/master/src/images/3.png" width="60" />
   </a>
 </p>
 <h1 align="center">
