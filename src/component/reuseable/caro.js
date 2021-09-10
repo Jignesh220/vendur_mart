@@ -3,9 +3,9 @@ import '../../component/layout.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'gatsby';
 
-import C4 from '../../images/c1.jpg'
-import C5 from '../../images/c2.jpg'
-import C6 from '../../images/c3.jpg'
+import C4 from '../../images/c1.webp'
+import C5 from '../../images/c2.webp'
+import C6 from '../../images/c3.webp'
 
 export default class Caro extends Component {
   render() {
