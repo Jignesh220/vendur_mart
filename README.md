@@ -20,4 +20,4 @@ Rajshree Roy - https://github.com/rajshriii
 
 Open VendurMart
 
-[<img src="https://drive.google.com/file/d/1dwNXL4SMJ-jpHRvMRoX-xwyJ1Qzhg4Dw/view?usp=sharing" alt="goto vendurMart">]()
+[<img src="https://github.com/Jignesh220/vendur_mart/blob/master/src/images/3.png" alt="goto vendurMart">]()
