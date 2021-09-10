@@ -13,11 +13,7 @@ We aim to create an Ecommerce web-application to boost the startups by giving th
 
 #Authors(college project)
 
-Jignesh Baria - https://github.com/Jignesh220
-Suzan Ghoniya - https://github.com/SuzanGhoniya
+Jignesh Baria - https://github.com/Jignesh220 <br/>
+Suzan Ghoniya - https://github.com/SuzanGhoniya <br/>
 Rajshree Roy - https://github.com/rajshriii
 
-
-Open VendurMart
-
-[<img src="https://github.com/Jignesh220/vendur_mart/blob/master/src/images/3.png" alt="goto vendurMart">]()
