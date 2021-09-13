@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Logo from '../../images/3.png'
 import Search from '../../images/search2.png'
 import Cart from '../../images/cart.png'
-import Profile from '../../images/profile.png'
+import '../layout.css'
 
 export default function Header() {
     return (
@@ -15,24 +15,24 @@ export default function Header() {
                 </Link>  
             </div>
             
-            <div class="text-fluid justify-content-start zoom1w">
+            <div class="text-fluid justify-content-start zoom1">
                 <Link to="">
                     <b className="d-inline-block align-baseline text-size">endurMart</b>
                 </Link>
             </div>
                 
                 <div className="container-fluid text-fluid justify-content-end" >
-                    
-                    <Link to="" className="nav-link text-dark zoom">
-                        <img src={Search} alt="logo goes here mx-auto" width="30px"/>
+                    <Link to="" className="navbar-brand text-fluid ms-5 text-white text-font zoom1">
+                        Home 
                     </Link> 
-
-                    <Link to="" className="nav-link text-dark zoom">
-                        <img src={Cart} alt="logo goes here mx-auto" width="35px"/>
-                    </Link>
-                    
-                    <Link to="/Home/" className="nav-link text-dark zoom">
-                        <img src={Profile} alt="logo goes here mx-auto" width="40px"/>
+                    <Link to="" className="navbar-brand text-fluid ms-5 text-font  text-white zoom1">
+                        Contact us 
+                    </Link> 
+                    <Link to="" className="navbar-brand text-fluid ms-5 me-5 text-font  text-white zoom1">
+                        About us
+                    </Link> 
+                    <Link to="" className="btn border rounded btn-warning text-font navbar-brand text-fluid ms-5 text-size2  text-color-theme zoom1">
+                        <b>Login</b> 
                     </Link>                  
                 </div>    
             </nav>

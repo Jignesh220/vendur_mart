@@ -1,0 +1,16 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.image-size{
+  max-width: 400px;
+}
+.loginwithgoogle{
+  background-color: #3b5998;
+}
+.loginwithfacebook{
+  background-color: #3b5998;
+}

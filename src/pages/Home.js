@@ -1,21 +1,18 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-
-
 import '../component/layout.css'
 
-import LoginLayout from '../component/LoginLayout'
+import Layout from "../component/layout"
 
-const IndexPage = (data) => {
+const Home = (data) => {
   console.log(data);
   return (
     <div>
-      <LoginLayout>
-      
-      </LoginLayout>
+      <Layout>
+      </Layout>
     </div>
   )
 }
 
-export default IndexPage
+export default Home
