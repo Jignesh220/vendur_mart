@@ -138,7 +138,6 @@ class login extends Component{
                 class="btn btn-primary btn-lg btn-block loginwithgoogle"
                 href="#"
                 role="button"
-                onClick={onSignIn}
               >
                 <i class="fab fa-google me-2"></i>Continue
                 with Google
