@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import "./login.css";
 import LoginSvg from "../../images/loginbackground.svg";
-import { Link } from 'gatsby';
 import Logo from "../../images/3.png"
 import { getAuth, onAuthStateChanged, signInWithCredential, GoogleAuthProvider } from "firebase/auth";
 
 
 
 
-class login extends Component{
+class signup extends Component{
 
   constructor(props) {
     super(props);
@@ -96,6 +95,21 @@ class login extends Component{
                   Email address
                 </label>
               </div>
+              
+              <div class="form-outline mb-4">
+                <input
+                  type="email"
+                  id="emailid"
+                  class="form-control form-control-lg"
+                  placeholder="E-mail Address"
+                  onChange={this.handleChange.bind(this, "email")}
+                  value={this.state.fields["email"]}
+                  required
+                />
+                <label class="form-label" for="emailid">
+                  Email address
+                </label>
+              </div>
 
               <div class="form-outline mb-4">
                 <input
@@ -152,13 +166,6 @@ class login extends Component{
               >
                 <i class="fab fa-twitter me-2"></i>Continue with Facebook
               </a>
-              <Link
-                class="btn btn-primary btn-lg btn-block loginwithfacebook"
-                to="/signup"
-                role="button"
-              >
-                <i class="fab fa-twitter me-2"></i>sign up
-              </Link>
             </form>
           </div>
         </div>
@@ -168,4 +175,4 @@ class login extends Component{
   }
 }
 
-export default login;
+export default signup;
