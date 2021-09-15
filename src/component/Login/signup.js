@@ -7,7 +7,7 @@ import { getAuth, onAuthStateChanged, signInWithCredential, GoogleAuthProvider }
 
 
 
-class signup extends Component{
+class Signup extends Component{
 
   constructor(props) {
     super(props);
@@ -95,7 +95,7 @@ class signup extends Component{
                   Email address
                 </label>
               </div>
-              
+
               <div class="form-outline mb-4">
                 <input
                   type="email"
@@ -175,4 +175,4 @@ class signup extends Component{
   }
 }
 
-export default signup;
+export default Signup;

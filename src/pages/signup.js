@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import '../component/layout.css'
 import SignupLayout from '../component/SignupLayout'
 
-const signupPage = (data) => {
+const SignupPage = (data) => {
   console.log(data);
   return (
     <div>
@@ -14,4 +14,4 @@ const signupPage = (data) => {
   )
 }
 
-export default signupPage
+export default SignupPage

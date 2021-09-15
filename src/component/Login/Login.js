@@ -154,7 +154,7 @@ class login extends Component{
               </a>
               <Link
                 class="btn btn-primary btn-lg btn-block loginwithfacebook"
-                to="/signup"
+                to=""
                 role="button"
               >
                 <i class="fab fa-twitter me-2"></i>sign up
