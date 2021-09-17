@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -16,14 +18,14 @@ module.exports = {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {
-          apiKey: "AIzaSyBYEVNJlK0nUK8eVIasH2sdRgMTi-13OQ4",
-          authDomain: "vendur-mart.firebaseapp.com",
-          databaseURL: "https://vendur-mart-default-rtdb.asia-southeast1.firebasedatabase.app",
-          projectId: "vendur-mart",
-          storageBucket: "vendur-mart.appspot.com",
-          messagingSenderId: "219037957646",
-          appId: "1:219037957646:web:2f005f4d4d77b19340465f",
-          measurementId: "G-WM42LW1TL3"
+          apiKey: process.env.apiKey,
+          authDomain: process.env.authDomain,
+          databaseURL: process.env.databaseURL,
+          projectId: process.env.projectId,
+          storageBucket: process.env.storageBucket,
+          messagingSenderId: process.env.messagingSenderId,
+          appId: process.env.appId,
+          measurementId: process.env.measurementId,
         }
       }
     }

@@ -142,22 +142,21 @@ class login extends Component{
                 href="#"
                 role="button"
               >
-                <i class="fab fa-google me-2"></i>Continue
-                with Google
+                Continue with Google
               </a>
               <a
                 class="btn btn-primary btn-lg btn-block loginwithfacebook"
                 href="#"
                 role="button"
               >
-                <i class="fab fa-twitter me-2"></i>Continue with Facebook
+                Continue with Facebook
               </a>
               <Link
                 class="btn btn-primary btn-lg btn-block loginwithfacebook"
-                to=""
+                to="/register"
                 role="button"
               >
-                <i class="fab fa-twitter me-2"></i>sign up
+                sign up
               </Link>
             </form>
           </div>
