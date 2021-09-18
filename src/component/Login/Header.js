@@ -4,6 +4,7 @@ import Logo from '../../images/3.png'
 import Search from '../../images/search2.png'
 import Cart from '../../images/cart.png'
 import '../layout.css'
+import './login.css'
 
 export default function Header() {
     return (

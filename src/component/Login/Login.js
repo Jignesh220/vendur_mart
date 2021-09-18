@@ -83,39 +83,39 @@ class login extends Component{
           <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 py-5 mx-auto">
             <form>
               <div class="form-outline mb-4">
+                  <label class="form-label pl-3" for="emailid">
+                    Email address
+                  </label>
                 <input
                   type="email"
                   id="emailid"
-                  class="form-control form-control-lg"
+                  class="form-control form-control-lg button-design shadow-sm pl-4"
                   placeholder="E-mail Address"
                   onChange={this.handleChange.bind(this, "email")}
                   value={this.state.fields["email"]}
                   required
                 />
-                <label class="form-label" for="emailid">
-                  Email address
-                </label>
               </div>
 
               <div class="form-outline mb-4">
+                <label class="form-label pl-3" for="Password">
+                  Password
+                </label>
                 <input
                   type="password"
                   id="Password"
-                  class="form-control form-control-lg"
+                  class="form-control form-control-lg button-design shadow-sm pl-4"
                   placeholder="Password"
                   onChange={this.handleChange.bind(this, "Password")}
                   value={this.state.fields["Password"]}
                   required required minLength={6}
                 />
-                <label class="form-label" for="Password">
-                  Password
-                </label>
               </div>
 
               <div class="d-flex justify-content-around align-items-center mb-4">
                 <div class="form-check">
                   <input
-                    class="form-check-input"
+                    class="form-check-input button-design"
                     type="checkbox"
                     value=""
                     id="submitbutton"
@@ -129,7 +129,7 @@ class login extends Component{
                 <a href="#!">Forgot password?</a>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <button type="submit" class="btn btn-primary btn-lg btn-block button-design">
                 Sign in
               </button>
 
@@ -138,21 +138,21 @@ class login extends Component{
               </div>
 
               <a
-                class="btn btn-primary btn-lg btn-block loginwithgoogle"
-                href="#"
+                class="btn btn-primary btn-lg btn-block loginwithgoogle button-design"
+                href="/app/login"
                 role="button"
               >
                 Continue with Google
               </a>
               <a
-                class="btn btn-primary btn-lg btn-block loginwithfacebook"
+                class="btn btn-primary btn-lg btn-block loginwithfacebook button-design"
                 href="#"
                 role="button"
               >
                 Continue with Facebook
               </a>
               <Link
-                class="btn btn-primary btn-lg btn-block loginwithfacebook"
+                class="btn btn-primary btn-lg btn-block loginwithfacebook button-design"
                 to="/register"
                 role="button"
               >

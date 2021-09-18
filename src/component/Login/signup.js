@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import "./login.css";
 import LoginSvg from "../../images/loginbackground.svg";
-import Logo from "../../images/3.png"
-import { getAuth, onAuthStateChanged, signInWithCredential, GoogleAuthProvider } from "firebase/auth";
 
 
-
+// import firebase from 'gatsby-plugin-firebase';
 
 class Signup extends Component{
+  
 
   constructor(props) {
     super(props);
@@ -17,7 +16,6 @@ class Signup extends Component{
       errors: {},
     };
   }
-
   handleValidation() {
     let fields = this.state.fields;
     let errors = {};
@@ -82,48 +80,47 @@ class Signup extends Component{
           <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 py-5 mx-auto">
             <form>
               <div class="form-outline mb-4">
+                <label class="form-label pl-3" for="emailid">
+                  Name
+                </label>
+                <input
+                  type="Name"
+                  id="name"
+                  class="form-control form-control-lg button-design shadow-sm pl-4"
+                  placeholder="Enter Your Name"
+                  required
+                  minLength={3}
+                />
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label pl-3" for="emailid">
+                  Email address
+                </label>
                 <input
                   type="email"
                   id="emailid"
-                  class="form-control form-control-lg"
+                  class="form-control form-control-lg button-design shadow-sm pl-4"
                   placeholder="E-mail Address"
                   onChange={this.handleChange.bind(this, "email")}
                   value={this.state.fields["email"]}
                   required
                 />
-                <label class="form-label" for="emailid">
-                  Email address
-                </label>
               </div>
 
               <div class="form-outline mb-4">
-                <input
-                  type="email"
-                  id="emailid"
-                  class="form-control form-control-lg"
-                  placeholder="E-mail Address"
-                  onChange={this.handleChange.bind(this, "email")}
-                  value={this.state.fields["email"]}
-                  required
-                />
-                <label class="form-label" for="emailid">
-                  Email address
+                <label class="form-label pl-3" for="Password">
+                  Password
                 </label>
-              </div>
-
-              <div class="form-outline mb-4">
                 <input
                   type="password"
                   id="Password"
-                  class="form-control form-control-lg"
+                  class="form-control form-control-lg button-design shadow-sm pl-4"
                   placeholder="Password"
                   onChange={this.handleChange.bind(this, "Password")}
                   value={this.state.fields["Password"]}
                   required required minLength={6}
                 />
-                <label class="form-label" for="Password">
-                  Password
-                </label>
               </div>
 
               <div class="d-flex justify-content-around align-items-center mb-4">
@@ -143,7 +140,7 @@ class Signup extends Component{
                 <a href="#!">Forgot password?</a>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <button type="submit" class="btn btn-primary btn-lg btn-block button-design">
                 Sign in
               </button>
 
@@ -152,19 +149,18 @@ class Signup extends Component{
               </div>
 
               <a
-                class="btn btn-primary btn-lg btn-block loginwithgoogle"
+                class="btn btn-primary btn-lg btn-block loginwithgoogle button-design"
                 href="#"
                 role="button"
               >
-                <i class="fab fa-google me-2"></i>Continue
-                with Google
+                Continue with Google
               </a>
               <a
-                class="btn btn-primary btn-lg btn-block loginwithfacebook"
+                class="btn btn-primary btn-lg btn-block loginwithfacebook button-design"
                 href="#"
                 role="button"
               >
-                <i class="fab fa-twitter me-2"></i>Continue with Facebook
+              Continue with Facebook
               </a>
             </form>
           </div>
