@@ -1,12 +1,24 @@
 import React, { Component } from 'react'
 import "./login.css";
 import LoginSvg from "../../images/loginbackground.svg";
+import { getAuth, signInWithPopup, GoogleAuthProvider, } from "firebase/auth";
+import firebase from 'gatsby-plugin-firebase';
+// import firebase from 'firebase/app';
+import { Auth } from '@firebase/auth';
 
-
-// import firebase from 'gatsby-plugin-firebase';
 
 class Signup extends Component{
-  
+
+  googlesignin(){
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth();
+    signInWithPopup(auth, provider)
+      .then((response) => {
+        console.log(response);
+      }).catch((error) => {
+        console.log(error);
+      });
+  }
 
   constructor(props) {
     super(props);
@@ -150,8 +162,9 @@ class Signup extends Component{
 
               <a
                 class="btn btn-primary btn-lg btn-block loginwithgoogle button-design"
-                href="#"
+                href=""
                 role="button"
+                onClick={this.googlesignin}
               >
                 Continue with Google
               </a>

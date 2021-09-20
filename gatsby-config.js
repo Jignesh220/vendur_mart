@@ -11,8 +11,14 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/3.png",
-        title: "Vendur Mart",
+        title: "Vendur_Mart",
       },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/*`] }
     },
     {
       resolve: "gatsby-plugin-firebase",

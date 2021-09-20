@@ -1,10 +1,12 @@
 import React from "react"
-import { navigate } from "gatsby-link";
+import { navigate } from '@reach/router';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { setUser, isLoggedIn } from "../component/utils/auth"
-import firebase from "gatsby-plugin-firebase"
+import Firebase from "gatsby-plugin-firebase";
+import * as firebase from "firebase/app";
+// import firebase from "gatsby-plugin-firebase";
 
-const Login = () => {
+const Loginpage = () => {
 
   if (isLoggedIn()) {
     navigate(`/Home`)
@@ -21,7 +23,7 @@ const Login = () => {
       callbacks: {
         signInSuccessWithAuthResult: (result) => {
           setUser(result.user);
-          navigate('/login');
+          navigate('/');
         }
       }
     };
@@ -29,11 +31,11 @@ const Login = () => {
 
   return (
     <div>
-      <p>Please sign-in to access to the private route:</p>
-      {firebase && <StyledFirebaseAuth uiConfig={getUiConfig(firebase.auth)} firebaseAuth={firebase.auth()}/>}
+      <center>Please sign-in to access to the private route:</center>
+      {Firebase && <StyledFirebaseAuth uiConfig={getUiConfig(Firebase.auth)} firebaseAuth={Firebase.auth()}/>}
     </div>
   );
 
 }
 
-export default Login
+export default Loginpage

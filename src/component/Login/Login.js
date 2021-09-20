@@ -5,9 +5,6 @@ import { Link } from 'gatsby';
 import Logo from "../../images/3.png"
 import { getAuth, onAuthStateChanged, signInWithCredential, GoogleAuthProvider } from "firebase/auth";
 
-
-
-
 class login extends Component{
 
   constructor(props) {

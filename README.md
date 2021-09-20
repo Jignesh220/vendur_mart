@@ -14,6 +14,7 @@ We aim to create an Ecommerce web-application to boost the startups by giving th
 ## Authors(college project)
 
 Jignesh Baria - https://github.com/Jignesh220 <br/>
-Suzan Ghoniya - https://github.com/SuzanGhoniya <br/>
-Rajshree Roy - https://github.com/rajshriii
+Rajshree Roy - https://github.com/rajshriii <br/>
+Suzan Ghoniya - https://github.com/SuzanGhoniya
+
 

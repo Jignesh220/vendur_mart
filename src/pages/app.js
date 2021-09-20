@@ -1,15 +1,13 @@
 import React from "react"
 import { Router } from "@reach/router"
-import Login from "../component/login"
-import Status from "../component/Status"
+import Loginpage from "../component/Loginpage"
 
 const App = () => (
-  <div>
-    <Status/>
-    <Router>
-      <Login path="/app/login" />
-    </Router>
-  </div>
+    <div>
+      <Router>
+        <Loginpage path="/app/login" />
+      </Router>
+    </div>
 )
 
 export default App

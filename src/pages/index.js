@@ -1,7 +1,4 @@
 import * as React from "react"
-import { graphql } from "gatsby"
-
-
 
 import '../component/layout.css'
 
