@@ -9,6 +9,7 @@ import Carousel from './reuseable/caro';
 import Card from './reuseable/Card';
 import Heading from './reuseable/Heading';
 import TrandingImage from '../images/Tranding.png'
+import BackToTop from './reuseable/BackToTop';
 import "./layout.css"
 
 const Layout = ({children}) => (
@@ -39,6 +40,7 @@ const Layout = ({children}) => (
         every business related problem."
         btext="About Us"
         />
+        <BackToTop/>
         <Footer/>
     </>
 )

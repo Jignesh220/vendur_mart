@@ -7,7 +7,7 @@ import Profile from '../../images/profile.png'
 
 export default function Header() {
     return (
-        <div>
+        <div id="header">
             <nav class="navbar navbar-expand navbar-light bg-theme">
             <div className="text-fluid justify-content-start ms-5 zoom1" >
                 <Link to="" >
