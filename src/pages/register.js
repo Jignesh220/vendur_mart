@@ -1,15 +1,17 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 import '../component/layout.css'
-import SignupLayout from '../component/SignupLayout'
+import RegisterApp from "../component/auth/RegisterApp"
+import Header from '../component/reuseable/Header'
+import Footer from "../component/reuseable/Footer"
+
 
 const RegisterPage = (data) => {
   console.log(data);
   return (
     <div>
-        <SignupLayout>
-        
-        </SignupLayout>
+    <Header/>
+    <RegisterApp/>
+    <Footer/>
     </div>
   )
 }

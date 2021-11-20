@@ -1,18 +1,19 @@
 import * as React from "react"
 
 import '../component/layout.css'
-import LoginApp from '../component/auth/LoginApp'
 import Header from '../component/reuseable/Header'
-import Footer from "../component/reuseable/Footer"
 
-const IndexPage = () => {
+import Footer from "../component/reuseable/Footer"
+import Main from '../component/auth/Main'
+
+const ProfilePage = () => {
   return (
     <div>
     <Header/>
-    <LoginApp/>
+    <Main/>
     <Footer/>
     </div>
   );
 }
 
-export default IndexPage
+export default ProfilePage

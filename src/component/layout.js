@@ -13,8 +13,7 @@ import BackToTop from './reuseable/BackToTop';
 import "./layout.css"
 
 const Layout = ({children}) => (
-    <>
-        <Header/>
+    <div>
         <Nav/>
         <Carousel/>
         <br/>
@@ -41,8 +40,7 @@ const Layout = ({children}) => (
         btext="About Us"
         />
         <BackToTop/>
-        <Footer/>
-    </>
+    </div>
 )
 
 Layout.prototype={

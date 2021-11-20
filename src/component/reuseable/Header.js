@@ -31,7 +31,7 @@ export default function Header() {
                         <img src={Cart} alt="logo goes here mx-auto" width="35px"/>
                     </Link>
                     
-                    <Link to="/Home/" className="nav-link text-dark zoom">
+                    <Link to="Profile" className="nav-link text-dark zoom">
                         <img src={Profile} alt="logo goes here mx-auto" width="40px"/>
                     </Link>                  
                 </div>    
