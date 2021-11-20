@@ -14,7 +14,7 @@ const Mainpage = () => {
             <div className="display-4 mb-3">Profile</div>
             Name : 
             {
-                auth.currentUser.displayName
+                // auth.currentUser.displayName
             }
             <br/>
             <Link to="/">
