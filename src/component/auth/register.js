@@ -5,6 +5,7 @@ import { validation } from "./auth";
 import { googleLogin } from "./auth";
 import { Link } from "gatsby";
 import LoginSVG from '../../images/loginbackground.svg'
+import loginbackgroundSVG from '../../images/loginBkg.svg'
 // import db from "../Firebase/firebaseData";
 
 const Register = () => {
@@ -43,7 +44,7 @@ const Register = () => {
         <div class="row d-flex align-items-center">
             <div class="no-gutters">
                 <img
-                    src={LoginSVG}
+                    src={loginbackgroundSVG}
                     class="img-fluid image-size borderRounded mx-auto login-card-img d-none d-lg-block"
                     alt="Phone image"
                 />

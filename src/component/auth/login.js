@@ -5,6 +5,7 @@ import { login } from './auth';
 import { googleLogin } from './auth';
 import { validation } from './auth';
 import LoginSVG from '../../images/loginbackground.svg'
+import loginbackgroundSVG from '../../images/loginBkg.svg'
 
 const Login = () => {
   const [form,setForm] = useState({
@@ -28,12 +29,12 @@ const Login = () => {
 
   return (
     <section class="d-flex align-items-center min-vh-100 py-md-0 ">\ 
-    <div class="card container shadow borderRounded border-0 bg-light">
+    <div class="card container shadow-lg borderRounded border-0 bg-light">
         <div class="row d-flex align-items-center">
             <div class="no-gutters">
                 <img
-                    src={LoginSVG}
-                    class="img-fluid image-size borderRounded mx-auto login-card-img d-none d-lg-block"
+                    src={loginbackgroundSVG}
+                    class="img-fluid image-size shadow-lg borderRounded mx-auto login-card-img d-none d-lg-block"
                     alt="Phone image"
                 />
             </div>
