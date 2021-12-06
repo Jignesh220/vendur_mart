@@ -8,7 +8,6 @@ import Footer from "../component/reuseable/Footer"
 const IndexPage = () => {
   return (
     <div>
-    <Header/>
     <LoginApp/>
     <Footer/>
     </div>

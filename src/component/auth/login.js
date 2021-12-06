@@ -4,8 +4,11 @@ import { Link } from 'gatsby';
 import { login } from './auth';
 import { googleLogin } from './auth';
 import { validation } from './auth';
+import { facebookLogin } from './auth';
 import LoginSVG from '../../images/loginbackground.svg'
 import loginbackgroundSVG from '../../images/loginBkg.svg'
+import { async } from '@firebase/util';
+import HeaderDoc from '../reuseable/HeaderDoc';
 
 const Login = () => {
   const [form,setForm] = useState({
@@ -27,9 +30,16 @@ const Login = () => {
     await googleLogin();
   }
 
+  const facebookLogin = async(e) =>{
+    e.preventDefault();
+    await facebookLogin();
+  }
+
   return (
-    <section class="d-flex align-items-center min-vh-100 py-md-0 ">\ 
-    <div class="card container shadow-lg borderRounded border-0 bg-light">
+    <div>
+    <HeaderDoc/>
+    <section class="d-flex align-items-center min-vh-100 py-md-0 ">
+    <div class="card container shadow-lg borderRounded border-0 bg-light my-3">
         <div class="row d-flex align-items-center">
             <div class="no-gutters">
                 <img
@@ -75,12 +85,8 @@ const Login = () => {
                         />
                     </div>
 
-                    <div class="d-flex justify-content-around align-items-center mb-4">
-                        <div class="form-check mt-3 ms-2">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required minLength={6}/>
-                            <label class="form-check-label" for="exampleCheck1">Condition*</label>
-                        </div>
-                        <a href="#!">Forgot password?</a>
+                    <div class="d-flex justify-content-around align-items-center mb-3">
+                        <Link to=" " className="text-decoration-none">Forgot Password ?</Link>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block button-design borderRounded">
@@ -88,19 +94,20 @@ const Login = () => {
                     </button>
                 </form>
                 <center>
-                    <h5 className="mt-4 ms-2"> Sign in with </h5>
+                    <h5 className="mt-4 ms-2 lead"> ----- or ----- </h5>
                     <button class="bi bi-google border-0 borderRounded bg-light mt-1 icon text-danger" onClick={googleDirectLognin}></button> <span>    </span>
-                    <button class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary"></button> <span>    </span>
+                    <button class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary" onClick={facebookLogin}></button> <span>    </span>
                     <button class="bi bi-apple border-0 borderRounded bg-light mt-1 icon text-secondary"></button> <span>    </span>
                 </center>
                 <center class="mt-3">
-                    <span>have you not Register yet? </span>
+                    <span>Have you not Register yet? </span>
                     <Link to="/register" class="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1"> Register</Link>
                 </center>
             </div>
         </div>
     </div>
 </section>
+</div>
   )
 }
 

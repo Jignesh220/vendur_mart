@@ -102,8 +102,8 @@ const Register = () => {
 
                     <div class="d-flex justify-content-around align-items-center mb-2">
                         <div class="form-check mt-2 ms-2">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required minLength={6}/>
-                            <label class="form-check-label" for="exampleCheck1">Condition*</label>
+                            <input type="checkbox" class="form-check-input" required minLength={6}/>
+                            <label class="form-check-label" ><a href="/t&c">Terms And Conditions</a></label>
                         </div>
                         <a href="#!" className="mt-2">Forgot password?</a>
                     </div>

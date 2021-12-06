@@ -14,6 +14,7 @@ import "./layout.css"
 
 const Layout = ({children}) => (
     <div>
+        <Header/>
         <Nav/>
         <Carousel/>
         <br/>

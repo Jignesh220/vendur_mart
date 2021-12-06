@@ -8,25 +8,25 @@ export default function Footer() {
           <div className="container-fluid container">
             <div className="row">
               <div className="ms-5 col-8 pt-3 text-light">
-                <Link to="#" className="mr-2 text-fluid text-size2 text-decoration-none text-light ">
+                <Link to="/t&c" className="mr-2 text-fluid text-size2 text-decoration-none text-light ">
                   Terms & Conditions
                 </Link>
                 <span className="mr-2 text-warning">
                   |
                 </span>
-                <Link to="#" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
+                <Link to="/refund" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
                   Refund Policy
                 </Link>
                 <span className="mr-2 text-warning">
                   |
                 </span>
-                <Link to="#" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
+                <Link to="/PrivacyPolicy" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
                   Privacy Policy
                 </Link>
                 <span className="mr-2 text-warning">
                   |
                 </span>
-                <Link to="#" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
+                <Link to="/ShippingandDeliveryPolicy" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
                   Pricing Policy
                 </Link>
               </div>

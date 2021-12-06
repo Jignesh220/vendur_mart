@@ -47,3 +47,8 @@ export const googleLogin = async()=>{
   const res = await firebase.auth().signInWithPopup(provider).catch(alert);
   return res;
 }
+
+export const facebookLogin = async() => {
+  const loginFacebook=firebase.auth().signInWithPopup(firebase.auth.FacebookAuthProvider());
+  return loginFacebook;
+}
