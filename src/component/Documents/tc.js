@@ -2,7 +2,9 @@ import React from 'react'
 
 export default function tc() {
     return (
+
         <div class="main_documents text-justify">
+            <p className="text-muted">Last updated: 8 December 2021</p>
             <p>The following agreement captures the terms and conditions of use, applicable to Your use of vendurmart.com website, which promotes business between suppliers and buyers globally. It is an agreement between You as the user of the Web Site/VendurMart Services and VendurMart. The expressions “You” “Your” or “User(s)” refers to any person who accesses or uses the Web Site for any purpose.</p>
             <p>By subscribing to or interacting with other User(s) on or entering into negotiations in respect of sale or supply of goods or services on or using the Web Site or VendurMart Services in any manner for any purpose, You undertake and agree that You have fully read, understood and accepted the Agreement.</p>
             <p>If You do not agree to or do not wish to be bound by the Agreement, You may not access or otherwise use the Web Site in any manner.</p>

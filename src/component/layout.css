@@ -144,3 +144,6 @@
 .main_documents{
   font-family: 'Baloo Bhaijaan 2', cursive;
 }
+.min-vh{
+  min-height: 58vh;
+}

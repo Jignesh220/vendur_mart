@@ -27,7 +27,7 @@ export default function Footer() {
                   |
                 </span>
                 <Link to="/ShippingandDeliveryPolicy" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
-                  Pricing Policy
+                  Shipping And Delivery Policy
                 </Link>
               </div>
               <div className="ms-5 col-4 pt-3 text-light text-center">
