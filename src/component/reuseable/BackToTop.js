@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap'
 export default function BackToTop() {
     return (
         <div className="row mx-auto" >
-            <button className="container-fluid text-center bg-theme2 text-decoration-none" onClick={() => scrollTo('#header')}>
+            <button className="container-fluid text-center border-0 bg-theme2 text-decoration-none" onClick={() => scrollTo('#header')}>
                 <div className="text-light py-3" >
                         Back to Top                    
                 </div>

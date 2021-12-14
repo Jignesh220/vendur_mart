@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/3.png",
+        icon: "src/images/fin.png",
         title: "Vendur_Mart",
       },
     },

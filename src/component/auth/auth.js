@@ -48,6 +48,11 @@ export const googleLogin = async()=>{
   return res;
 }
 
+export const ResetPasswordMail = async({email})=>{
+  const res = await firebase.auth().sendPasswordResetEmail(email).then(alert(`Check your Mail\npassword reset Link send on ${email}`)).catch(alert);
+  return res;
+}
+
 export const facebookLogin = async() => {
   const loginFacebook=firebase.auth().signInWithPopup(firebase.auth.FacebookAuthProvider());
   return loginFacebook;

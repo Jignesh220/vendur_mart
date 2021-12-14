@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Logo from '../../images/3.png'
+import Logo2 from '../../images/fin.png'
 
 export default function HeaderDoc() {
     return (
@@ -8,7 +9,7 @@ export default function HeaderDoc() {
             <div class="bg-theme mx-auto py-2">
             <center>
                 <a class="navbar-brand text-light" href="/">
-                    <img src={Logo} alt="VendurMart Logo" width="20px"/>
+                    <img src={Logo2} alt="VendurMart Logo" width="20px"/>
                     <br/>
                     VendurMart
                 </a>

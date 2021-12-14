@@ -31,7 +31,7 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="ms-5 col-4 pt-3 text-light text-center">
-                <Link to="#" className="mr-2 text-fluid text-size2 text-decoration-none text-light">
+                <Link to="/" className="mr-2 text-fluid text-size2 text-decoration-none text-light main_documents">
                   <h6>Copyright &copy;2021 <b className="text-warning">VendurMart</b></h6>
                 </Link>
               </div>

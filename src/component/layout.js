@@ -22,7 +22,7 @@ const Layout = ({children}) => (
         {children}
         <Card/>
         <Dualinfoblock 
-        heading="Tranding Product"
+        heading="Trending Product"
         img= {TrandingImage}
         TopicTitle = "boAt Xtend Smartwatch"
         Price = "Price ₹3,499.00"
