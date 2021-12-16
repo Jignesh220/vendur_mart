@@ -54,6 +54,7 @@ export const ResetPasswordMail = async({email})=>{
 }
 
 export const facebookLogin = async() => {
-  const loginFacebook=firebase.auth().signInWithPopup(firebase.auth.FacebookAuthProvider());
+  const FacebookAuth = new firebase.auth.FacebookAuthProvider();
+  const loginFacebook=firebase.auth().signInWithPopup(FacebookAuth).catch(alert);
   return loginFacebook;
 }

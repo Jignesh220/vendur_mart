@@ -30,7 +30,7 @@ const Login = () => {
     await googleLogin();
   }
 
-  const facebookLogin = async(e) =>{
+  const fbLogin = async(e) =>{
     e.preventDefault();
     await facebookLogin();
   }
@@ -96,7 +96,7 @@ const Login = () => {
                 <center>
                     <h5 className="mt-4 ms-2 lead"> ----- or ----- </h5>
                     <button class="bi bi-google border-0 borderRounded bg-light mt-1 icon text-danger" onClick={googleDirectLognin}></button> <span>    </span>
-                    <button class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary" onClick={facebookLogin}></button> <span>    </span>
+                    <button class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary" onClick={fbLogin}></button> <span>    </span>
                     <button class="bi bi-apple border-0 borderRounded bg-light mt-1 icon text-secondary"></button> <span>    </span>
                 </center>
                 <center class="mt-3">
