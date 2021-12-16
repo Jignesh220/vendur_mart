@@ -13,7 +13,7 @@ const ForgotPasswordpage = () => {
         <div className="container-fluid">
           <div className="row my-2">
             <div class="card col-10 mx-auto bg-light">
-              <div class="card-body">
+              <div class="card-body my-auto">
                 <h5 class="card-title text-center mt-5">
                   Reset Password
                 </h5>

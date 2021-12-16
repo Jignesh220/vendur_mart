@@ -10,6 +10,7 @@ import Card from './reuseable/Card';
 import Heading from './reuseable/Heading';
 import TrandingImage from '../images/Tranding.png'
 import BackToTop from './reuseable/BackToTop';
+import Social from './reuseable/social';
 import "./layout.css"
 
 const Layout = ({children}) => (
@@ -41,6 +42,7 @@ const Layout = ({children}) => (
         btext="About Us"
         />
         <BackToTop/>
+        <Social/>
     </div>
 )
 
