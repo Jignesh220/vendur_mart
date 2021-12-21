@@ -7,7 +7,7 @@ export default function Social() {
         <div id="header">
             <div class="bg-theme mx-auto py-1 text-center">
                 <span className='text-light mx-3'>Contact Us</span>
-                <a class="navbar-brand text-light" href="tel://9408165048" target="_blank">
+                <a class="navbar-brand text-light" href="tel://8488080983" target="_blank">
                     <i alt="facebook logo" class="bi bi-telephone"/>
                 </a>
                 <a class="navbar-brand text-light" href="mailto:vendurmart@gmail.com" target="_blank">

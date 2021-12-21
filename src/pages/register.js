@@ -1,7 +1,7 @@
 import * as React from "react"
 import '../component/layout.css'
 import RegisterApp from "../component/auth/RegisterApp"
-import Header from '../component/reuseable/Header'
+import HeaderDoc from "../component/reuseable/HeaderDoc"
 import Footer from "../component/reuseable/Footer"
 
 
@@ -9,7 +9,6 @@ const RegisterPage = (data) => {
   console.log(data);
   return (
     <div>
-    <Header/>
     <RegisterApp/>
     <Footer/>
     </div>

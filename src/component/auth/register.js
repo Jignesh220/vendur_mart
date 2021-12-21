@@ -4,16 +4,15 @@ import { register } from "./auth";
 import { validation } from "./auth";
 import { googleLogin } from "./auth";
 import { Link } from "gatsby";
-import LoginSVG from '../../images/loginbackground.svg'
 import loginbackgroundSVG from '../../images/loginBkg.svg'
-// import db from "../Firebase/firebaseData";
+import HeaderDoc from "../reuseable/HeaderDoc";
+import Footer from "../reuseable/Footer";
 
 const Register = () => {
-  const [customerName, setCustomerName] = useState("");
-
   const [form,setForm] = useState({
       email:'',
-      password:''
+      password:'',
+      customerName:''
   })
   const handleSubmit = async(e)=>{
       e.preventDefault();
@@ -38,7 +37,10 @@ const Register = () => {
     e.preventDefault();
     await googleLogin();
   }
+
   return (
+    <div>
+    <HeaderDoc/>
     <section class="d-flex align-items-center min-vh-100 py-md-0 "> 
     <div class="card container shadow-lg borderRounded border-0 bg-light">
         <div class="row d-flex align-items-center">
@@ -63,8 +65,9 @@ const Register = () => {
                         class="form-control mt-1 borderRounded ps-3"
                         id="InputName"
                         placeholder="Enter Your Name"
-                        value={customerName}
-                        onChange={(e) => setCustomerName(e.target.value)}
+                        onChange={(e) =>
+                            setForm({ ...form, customerName: e.target.value })
+                        }
                         required minLength={3}
                       />
                   </div>
@@ -103,9 +106,10 @@ const Register = () => {
                     <div class="d-flex justify-content-around align-items-center mb-2">
                         <div class="form-check mt-2 ms-2">
                             <input type="checkbox" class="form-check-input" required minLength={6}/>
-                            <label class="form-check-label" ><a href="/t&c">Terms And Conditions</a></label>
+                            <label class="form-check-label" >
+                                <a href="/t&c" target="_blank">Terms And Conditions</a>
+                            </label>
                         </div>
-                        <a href="#!" className="mt-2">Forgot password?</a>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block button-design borderRounded">
@@ -126,6 +130,8 @@ const Register = () => {
         </div>
     </div>
 </section>
+<Footer/>
+</div>
   )
 }
 
