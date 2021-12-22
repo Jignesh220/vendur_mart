@@ -6,20 +6,27 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 const Mainpage = () => {
-    const [user, setGetData] = useState()
-    const {uid} = auth.currentUser
-    
+    const [users, setGetData] = useState()
+    let uid= null
+
+    auth.onAuthStateChanged(function(user) {
+        if (user) {
+            uid = auth.currentUser.uid
+        }
+    });
+    const uid2 = uid;
     const getUser = async () => {
+        
         try {
-          const documentSnapshot = await db
+             const documentSnapshot = await db
             .collection('user')
-            .doc(uid)
+            .doc(uid2)
             .get();
     
           const userData = documentSnapshot.data();
           setGetData(userData);
         } catch {
-          alert("something went wrong!!")
+          alert("somthing went wrong")
         }
       };
 
@@ -44,17 +51,17 @@ const Mainpage = () => {
             <center>
             <div className="display-4 mb-3">Profile</div>
             Name : {
-                user && user?.Name
+                users && users?.Name
             }
             <br/>
             <Link to="/">
                 <button className="btn border-0 borderRounded icon text-light bg-dark px-3 mt-4" onClick={logout}>
                     Logout
                 </button>
-            </Link>
+            </Link><br />
             <button className="btn border-0 borderRounded icon text-light bg-dark px-3 mt-4" onClick={testsomthing}>
-                test
-            </button>
+                    test
+                </button>
             </center>
         </div>
     );

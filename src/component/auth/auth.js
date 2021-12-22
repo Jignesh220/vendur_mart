@@ -3,6 +3,7 @@ import "firebase/compat/app"
 import { provider } from '../../Firebase/firebase';
 import {auth} from '../../Firebase/firebase'
 import { db } from '../../Firebase/firebase';
+import { async } from '@firebase/util';
   
 export const register = async({email, password, customerName})=>{
   
@@ -112,4 +113,9 @@ export const userDetail = async({customerName, password}) => {
     password : password
   })
   return res;
+}
+
+export const currentuser = async() =>{
+  const uid = auth.currentUser
+  return uid;
 }
