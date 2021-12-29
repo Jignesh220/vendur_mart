@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import ErrorImage from '../images/404.png'
+import ErrorImage from '../images/lostinspace.png'
 import '../component/layout.css'
 
 
@@ -8,11 +8,11 @@ import '../component/layout.css'
 const NotFoundPage = () => {
   return (
     <div>
-      <div className="card cardHeight bg-light m-5">
+      <div className="card cardHeight border-0 shadow-lg min-vh-100">
         <img src={ErrorImage} alt="404 image" height="300px" width="400px" className="img-fluid mx-auto d-block mt-5"/>
-        <div className="mx-auto mt-3 text-error-font display-5">
-          <span className="display-5">LOOKING FOR SOMETHING</span><br/>
-          <Link to="/" className="btn m-2 bg-danger text-light mx-auto d-block mt-3">Home</Link>
+        <div className="mx-auto mt-3 text-error-font">
+          <span className="display-4 text-light">Lost In Space ?</span><br/>
+          <Link to="/" className="btn my-1 bg-primary text-light mx-auto d-block mt-4 borderRounded col-6">Home</Link>
         </div>
       </div>
     </div>
