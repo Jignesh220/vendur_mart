@@ -59,9 +59,6 @@ const Mainpage = () => {
                     Logout
                 </button>
             </Link><br />
-            <button className="btn border-0 borderRounded icon text-light bg-dark px-3 mt-4" onClick={testsomthing}>
-                    test
-                </button>
             </center>
         </div>
     );
