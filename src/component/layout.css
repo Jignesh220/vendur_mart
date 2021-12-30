@@ -147,6 +147,9 @@
 .min-vh {
   min-height: 58vh;
 }
+.min-vh-65{
+  min-height: 80vh;
+}
 
 .cardHeight {
   background-image: linear-gradient(to right, #00416d, #000000);
