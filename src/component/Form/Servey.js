@@ -47,7 +47,7 @@ const Servey = () => {
 
   return (
     <div>
-      <div className="card min-vh-100 m-5 bg-light">
+      <div className="card min-vh-100 m-2 m-md-5 bg-light">
         <div className="text-center mt-3 display-4 text-fluid">Servey Form</div>
         <form onSubmit={handleSubmit} className="mx-auto mt-4 col-11 col-md-5">
           <div class="form-group">
