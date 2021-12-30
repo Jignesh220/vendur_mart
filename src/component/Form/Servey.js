@@ -14,6 +14,7 @@ const Servey = () => {
   const [form, setForm] = useState({
     email: "",
     name: "",
+    number:"",
     gender: "",
     oRating: "",
     m3t1: "",
@@ -66,7 +67,7 @@ const Servey = () => {
           </div>
           <div class="form-group">
             <label for="InputName">
-              Email ID or Number ( optional )
+              Email ID<span className="text-danger"> *</span>
               <span className="text-danger"> </span>
             </label>
             <input
@@ -75,6 +76,22 @@ const Servey = () => {
               placeholder="Enter your Email Id"
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               minLength={3}
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="form-group">
+            <label for="InputName">
+              Contact Number<span className="text-danger"> *</span>
+              <span className="text-danger"> </span>
+            </label>
+            <input
+              type="number"
+              class="form-control borderRounded"
+              placeholder="Enter your Number"
+              onChange={(e) => setForm({ ...form, number: e.target.value })}
+              pattern="[0-9]{5}-[0-9]{5}"
+              required
             />
             <div class="valid-feedback">Looks good!</div>
           </div>
