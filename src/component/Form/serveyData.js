@@ -23,7 +23,7 @@ export const serveyData = async ({
   let history = createBrowserHistory();
   const res = db
     .collection("serveyForm")
-    .doc(name)
+    .doc(name+" "+number)
     .set({
       Name: name,
       Email: email,
