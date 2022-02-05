@@ -331,7 +331,9 @@ const Servey = () => {
         <DialogContent>
           <DialogContentText>
             press close if you want to edit your response <br /> <br />
-            Explore more to <a href="http://vendur-mart.web.app/">VendurMart</a>
+            <center>Follow us on <a href="https://www.instagram.com/VendurMart/" target="_blank" class="bi bi-instagram border-0 borderRounded bg-light mt-1 icon text-danger ml-2"></a>
+            <a href="https://www.facebook.com/VendurMart" target="_blank" class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary ml-3"></a><br/><br/>
+            Explore more to <br/><a href="http://vendur-mart.web.app/">VendurMart</a></center>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
