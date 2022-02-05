@@ -14,7 +14,7 @@ const Servey = () => {
   const [form, setForm] = useState({
     email: "",
     name: "",
-    number:"",
+    number: "",
     gender: "",
     oRating: "",
     m3t1: "",
@@ -28,7 +28,7 @@ const Servey = () => {
     butOnline: "",
     permonthShoping: "",
     preferChoice: "",
-    cap:"false"
+    cap: "false",
   });
   const [open, setOpen] = React.useState(false);
 
@@ -41,7 +41,7 @@ const Servey = () => {
   const handleClickToOpen = () => {
     setOpen(true);
   };
-  
+
   const handleToClose = () => {
     setOpen(false);
   };
@@ -49,7 +49,7 @@ const Servey = () => {
   return (
     <div>
       <div className="card min-vh-100 m-2 m-md-5 bg-light">
-        <div className="text-center mt-3 display-4 text-fluid">Servey Form</div>
+        <div className="text-center mt-3 display-4 text-fluid">Survey</div>
         <form onSubmit={handleSubmit} className="mx-auto mt-4 col-11 col-md-5">
           <div class="form-group">
             <label for="InputName">
@@ -120,7 +120,7 @@ const Servey = () => {
                   onChange={(e) => setForm({ ...form, gender: e.target.value })}
                   required
                 />
-                <label for="genderSelection" >Female</label>
+                <label for="genderSelection">Female</label>
               </div>
             </div>
             <div class="form-group">
@@ -147,7 +147,7 @@ const Servey = () => {
             </div>
             <div class="form-group">
               <label for="InputName">
-                Most three things you buy on a daily basis
+                Three things you buy most on a daily basis
                 <span className="text-danger"> *</span>
               </label>
               <input
@@ -225,8 +225,8 @@ const Servey = () => {
             </div>
             <div class="form-group">
               <label for="InputName">
-                Do you Like to Shop from local store by going physically to the
-                local store<span className="text-danger"> *</span>
+                Rate shopping experience in local store local store
+                <span className="text-danger"> *</span>
               </label>
               <input
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -281,7 +281,7 @@ const Servey = () => {
               </div>
               <div class="form-group">
                 <label for="InputName">
-                  What you prefer<span className="text-danger"> *</span>
+                  What do you prefer?<span className="text-danger"> *</span>
                 </label>
                 <br />
                 <div class="form-check form-check-inline">
@@ -315,7 +315,7 @@ const Servey = () => {
                   </label>
                 </div>
                 <button
-                  type="submit" 
+                  type="submit"
                   className="btn bg-primary mt-4 text-light d-block mx-auto col-11 col-md-5 borderRounded"
                 >
                   Submit
@@ -329,13 +329,12 @@ const Servey = () => {
         <DialogTitle>{"your response has been recorded"}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            press close if you want to edit your response <br/> <br/>
+            press close if you want to edit your response <br /> <br />
             Explore more to <a href="http://vendur-mart.web.app/">VendurMart</a>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleToClose} 
-                  color="primary" autoFocus>
+          <Button onClick={handleToClose} color="primary" autoFocus>
             Close
           </Button>
         </DialogActions>

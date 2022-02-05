@@ -41,6 +41,5 @@ export const serveyData = async ({
         
     })
     .catch(alert);
-//   alert("your response has been recorded\npress ok if you want to edit your response \nExplore more to "+<a href="http://vendur-mart.web.app/">VendurMart</a>);
   return res;
 };

@@ -38,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
-        // collectionTypes: [`products`,`groceries`],
+        apiURL: ``,
+        collectionTypes: [`products`],
         queryLimit: 1000,
         
       },
