@@ -233,7 +233,7 @@ const Servey = () => {
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                 type="number"
                 class="form-control borderRounded"
-                placeholder="Rate between 1 to 10 (1: Best to 10: Worst)"
+                placeholder="Rate between 1 to 10 (1: Worst to 10: Best)"
                 onChange={(e) =>
                   setForm({ ...form, localSRating: e.target.value })
                 }
