@@ -53,7 +53,7 @@ const Servey = () => {
         <form onSubmit={handleSubmit} className="mx-auto mt-4 col-11 col-md-5">
           <div class="form-group">
             <label for="InputName">
-              Full Name<span className="text-danger"> *</span>
+              Name<span className="text-danger"> *</span>
             </label>
             <input
               type="text"
@@ -86,12 +86,13 @@ const Servey = () => {
               <span className="text-danger"> </span>
             </label>
             <input
-              type="number"
+              type="tel"
               class="form-control borderRounded"
               placeholder="Enter your Number"
               onChange={(e) => setForm({ ...form, number: e.target.value })}
-              pattern="[0-9]{5}-[0-9]{5}"
               required
+              minLength={10}
+              maxLength={10}
             />
             <div class="valid-feedback">Looks good!</div>
           </div>

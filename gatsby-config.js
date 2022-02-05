@@ -35,15 +35,15 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: ``,
-        collectionTypes: [`products`],
-        queryLimit: 1000,
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: ``,
+    //     collectionTypes: [`products`],
+    //     queryLimit: 1000,
         
-      },
-    },
+    //   },
+    // },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

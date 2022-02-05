@@ -12,14 +12,6 @@ const ProfilePage = ({ data }) => {
     <div>
       <Header />
       <Main />
-      <ul>
-      {data.allStrapiProducts.edges.map((document) => {
-        <li key={document.node.id}>
-          <h2>{document.node.name}</h2>
-        </li>
-
-      })}
-      </ul>
       <Footer />
     </div>
   );
@@ -27,19 +19,19 @@ const ProfilePage = ({ data }) => {
 
 export default ProfilePage;
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allStrapiProducts {
-      edges {
-        node {
-          id
-          name
-          description
-          product_photo {
-            url
-          }
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     allStrapiProducts {
+//       edges {
+//         node {
+//           id
+//           name
+//           description
+//           product_photo {
+//             url
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
