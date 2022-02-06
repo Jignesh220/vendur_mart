@@ -4,23 +4,23 @@ import Footer from "../component/reuseable/Footer";
 import BackgroundImage from "../images/bkgi.png";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import Carousel from 'react-bootstrap/Carousel';
 import '../component/layout.css'
 
 const IndexPage = () => {
   return (
-    <div>
+    <div className="min-vh-100 test">
       <HeaderDoc />
       <div className="card border-0">
         <img src={BackgroundImage} alt="" className="bkgimage" />
-        <div class="card-img-overlay text-light ml-5 mt-5 w-25 text-monospace lead">
-          <h5 class="card-title display-4">VendurMart</h5>
-          <p class="card-text ml-2">
+        <div class="card-img-overlay text-light ml-5 mt-lg-5 mt-1 w-75 text-monospace lead">
+          <h5 class="card-title font-size-card">VendurMart</h5>
+          <p class="card-text ml-2 w-50 font-size-card2">
             We Provide B2B, C2C, B2C, C2C system for a better quality service
           </p>
-          <br />
           <button
             onClick={() => scrollTo("#explore")}
-            class="card-text ml-2 btn bg-light px-4 py-1 zoom1"
+            class="card-text ml-2 btn bg-light px-4 py-1 zoom1 font-size-card3"
           >
             Explore
           </button>
@@ -49,27 +49,27 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="row mt-3 bg-theme2 mx-5 borderR ">
-          <div className="col-7 ml-5">
+          <div className="col-lg-7 mx-auto col-10 ml-lg-5">
             <div className="mx-auto lead text-monospace my-3 text-light">
               VendurMart Ecommerce
             </div>
           </div>
-          <div className="col-4">
-            <Link to="/home" className=" btn bg-warning py-1 zoom1 float-right lead text-monospace my-3 text-dark borderR px-5">
+          <div className="ccol-10 mx-auto col-lg-4">
+            <Link to="/home" className=" btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5">
               Ecommerce
             </Link>
           </div>
         </div>
         <div className="row mt-3 bg-theme2 mx-5 borderR ">
-          <div className="col-7 ml-5">
+          <div className="col-lg-7 mx-auto col-10 ml-lg-5">
             <div className="mx-auto lead text-monospace my-3 text-light">
               VendurMart Bussiness
             </div>
           </div>
-          <div className="col-4">
-            <button className=" btn bg-warning py-1 zoom1 float-right lead text-monospace my-3 text-dark borderR px-5">
+          <div className="col-10 mx-auto col-lg-4">
+            <Link to="" className=" btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5 text-center">
               Bussiness
-            </button>
+            </Link>
           </div>
         </div>
       </div>
