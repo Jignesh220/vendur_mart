@@ -157,3 +157,7 @@
 .text-error-font {
   font-family: 'Merienda', cursive;
 }
+
+.borderR{
+  border-radius: 30px;
+}

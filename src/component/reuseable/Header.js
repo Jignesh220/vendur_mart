@@ -11,7 +11,7 @@ export default function Header() {
         <div id="header">
             <nav class="navbar navbar-expand navbar-light bg-theme">
             <div className="zoom1" >
-                <Link to="/" >
+                <Link to="/home" >
                     <img className="ms-5" src={Logo2} alt="VendurMart Logo" width="40px"/>
                 </Link>  
             </div>
@@ -26,7 +26,7 @@ export default function Header() {
                         <img src={cart2} alt="logo goes here mx-auto" width="30px"/>
                     </Link>
                     
-                    <Link to="Profile" className="nav-link text-dark zoom">
+                    <Link to="/Profile/" className="nav-link text-dark zoom">
                         <img src={Profile2} alt="logo goes here mx-auto bg-light" width="35px"/>
                     </Link>                  
                 </div>    
