@@ -130,7 +130,6 @@ const Register = () => {
         </div>
     </div>
 </section>
-<Footer/>
 </div>
   )
 }
