@@ -67,7 +67,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="col-10 mx-auto col-lg-4">
-            <Link to="" className=" btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5 text-center">
+            <Link to="https://business-vendur-mart.web.app/" className=" btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5 text-center">
               Bussiness
             </Link>
           </div>
