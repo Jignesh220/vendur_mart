@@ -9,7 +9,7 @@ import '../component/layout.css'
 
 const IndexPage = () => {
   return (
-    <div className="min-vh-100 test">
+    <section className="min-vh-100 test">
       <HeaderDoc />
       <div className="card border-0">
         <img src={BackgroundImage} alt="" className="bkgimage" />
@@ -75,7 +75,7 @@ const IndexPage = () => {
       </div>
       <br />
       <Footer />
-    </div>
+    </section>
   );
 };
 

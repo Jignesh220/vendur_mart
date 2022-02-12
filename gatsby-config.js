@@ -38,10 +38,9 @@ module.exports = {
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
-    //     apiURL: ``,
+    //     apiURL: `http://localhost:1337`,
     //     collectionTypes: [`products`],
     //     queryLimit: 1000,
-        
     //   },
     // },
     `gatsby-plugin-image`,
