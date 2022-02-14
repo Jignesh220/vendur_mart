@@ -10,9 +10,7 @@ import Mainpage from "../component/auth/Main";
 export default function Profile() {
   return (
     <div>
-      <Header />
       <RedirectApp />
-      <Footer />
     </div>
   );
 }
