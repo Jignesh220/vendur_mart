@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
-import { Button } from "react-bootstrap";
+import '../layout.css'
 
 export default class Card extends Component {
   constructor(props) {

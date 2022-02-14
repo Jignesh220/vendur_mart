@@ -21,9 +21,9 @@ export default function Header() {
                         <img src={search2} alt="logo goes here mx-auto" width="25px"/>
                     </Link> 
 
-                    <Link to="/cart/" className="nav-link text-dark zoom">
-                        <img src={cart2} alt="logo goes here mx-auto" width="30px"/>
-                    </Link>
+                    <button className="nav-link btn text-dark zoom snipcart-checkout">
+                        <img src={cart2} alt="btn logo goes here mx-auto" width="30px"/>
+                    </button>
                     
                     <Link to="/Profile/" className="nav-link text-dark zoom">
                         <img src={Profile2} alt="logo goes here mx-auto bg-light" width="35px"/>

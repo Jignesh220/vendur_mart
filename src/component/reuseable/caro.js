@@ -20,7 +20,7 @@ export default class Caro extends Component {
             <b>Condiments, Grains and Bread, Oil & Fat, Dairy Product, etc</b>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={1000}>
           <Link to="" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"
