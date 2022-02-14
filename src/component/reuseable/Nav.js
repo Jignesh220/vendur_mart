@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 export default class Nav extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-md navbar2 bg-theme2 justify-content-start">
                 
-                <a href=" " className="btn border-0 bg-theme rounded navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
+                <Link to="/grocery/" className="btn border-0 bg-theme rounded navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
                     <b>Grocery</b>  
-                </a>
+                </Link>
 
                 <a href=" " className="btn border-0 bg-theme navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
                     <b>Electronics</b> 
@@ -18,9 +19,9 @@ export default class Nav extends Component {
                 </a>
 
                 <button className="navbar-toggler" type="button" >
-                    <a href=" " className="btn border-0 bg-theme text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
+                    <Link to="/all/" className="btn border-0 bg-theme text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
                         <b>All</b> 
-                    </a>
+                    </Link>
                 </button>
 
                 
