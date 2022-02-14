@@ -3,7 +3,7 @@ import '../component/layout.css'
 import Header from '../component/reuseable/Header'
 import Footer from "../component/reuseable/Footer"
 import { graphql } from "gatsby"
-import Card from "../component/products/card"
+import Card from "../component/products/Card"
 import Heading from "../component/reuseable/Heading"
 import Dualinfoblock from "../component/reuseable/Dualinfoblock"
 import Infoblock from "../component/reuseable/Infoblock"
