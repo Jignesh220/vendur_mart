@@ -5,14 +5,13 @@ import Register from './register';
 import Index from '../../pages/index'
 import { Redirect } from 'react-router-dom';
 import { Link } from 'gatsby';
-import Layout from '../layout'
-import LoginApp from './LoginApp';
+import HomePage from '../../pages/home';
 
 function RegisterApp() {
     const [user] = useAuthState(auth);
     return (
-      user ? <LoginApp/> : <Register/>
+      user ? <HomePage/> : <Register/>
     );
   }
     
-  export default RegisterApp;
+export default RegisterApp;

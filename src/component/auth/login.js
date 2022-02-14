@@ -38,29 +38,29 @@ const Login = () => {
   return (
     <div>
     <HeaderDoc/>
-    <section class="d-flex align-items-center min-vh-100 py-md-0 ">
-    <div class="card container shadow-lg borderRounded border-0 bg-light my-3">
-        <div class="row d-flex align-items-center">
-            <div class="no-gutters">
+    <section className="d-flex align-items-center min-vh-100 py-md-0 ">
+    <div className="card container shadow-lg borderRounded border-0 bg-light my-3">
+        <div className="row d-flex align-items-center">
+            <div className="no-gutters">
                 <img
                     src={loginbackgroundSVG}
-                    class="img-fluid image-size shadow-lg borderRounded mx-auto login-card-img d-none d-lg-block"
+                    className="img-fluid image-size shadow-lg borderRounded mx-auto login-card-img d-none d-lg-block"
                     alt="Phone image"
                 />
             </div>
-            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 py-5 mx-auto">
+            <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1 py-5 mx-auto">
                 <center className="mb-5">
                     <div className="display-4">Sign In</div>
                 </center>
                 <form onSubmit={handleSubmit}>
-                    <div class="form-outline mb-4">
-                        <label class="form-label pl-3" for="emailid">
+                    <div className="form-outline mb-4">
+                        <label className="form-label pl-3" for="emailid">
                             Email address
                         </label>
                         <input
                             type="email"
                             id="emailid"
-                            class="form-control borderRounded button-design shadow-sm pl-4"
+                            className="form-control borderRounded button-design shadow-sm pl-4"
                             placeholder="E-mail Address"
                             onChange={(e) =>
                                 setForm({ ...form, email: e.target.value })
@@ -69,14 +69,14 @@ const Login = () => {
                         />
                     </div>
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label pl-3" for="Password">
+                    <div className="form-outline mb-4">
+                        <label className="form-label pl-3" for="Password">
                             Password
                         </label>
                         <input
                             type="password"
                             id="Password"
-                            class="form-control borderRounded button-design shadow-sm pl-4"
+                            className="form-control borderRounded button-design shadow-sm pl-4"
                             placeholder="Password"
                             onChange={(e) => 
                               setForm({...form, password: e.target.value})
@@ -85,23 +85,23 @@ const Login = () => {
                         />
                     </div>
 
-                    <div class="d-flex justify-content-around align-items-center mb-3">
+                    <div className="d-flex justify-content-around align-items-center mb-3">
                         <Link to="/forgotPassword" className="text-decoration-none">Forgot Password ?</Link>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block button-design borderRounded">
+                    <button type="submit" className="btn btn-primary btn-block button-design borderRounded">
                         Sign in
                     </button>
                 </form>
                 <center>
                     <h5 className="mt-4 ms-2 lead"> ----- or ----- </h5>
-                    <button class="bi bi-google border-0 borderRounded bg-light mt-1 icon text-danger" onClick={googleDirectLognin}></button> <span>    </span>
-                    <button class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary" onClick={fbLogin}></button> <span>    </span>
-                    <button class="bi bi-apple border-0 borderRounded bg-light mt-1 icon text-secondary"></button> <span>    </span>
+                    <button className="bi bi-google border-0 borderRounded bg-light mt-1 icon text-danger" onClick={googleDirectLognin}></button> <span>    </span>
+                    <button className="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary" onClick={fbLogin}></button> <span>    </span>
+                    <button className="bi bi-apple border-0 borderRounded bg-light mt-1 icon text-secondary"></button> <span>    </span>
                 </center>
-                <center class="mt-3">
+                <center className="mt-3">
                     <span>Have you not Register yet? </span>
-                    <Link to="/register" class="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1"> Register</Link>
+                    <Link to="/register" className="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1"> Register</Link>
                 </center>
             </div>
         </div>

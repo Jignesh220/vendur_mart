@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Nav extends Component {
     render() {
         return (
-            <nav class="navbar navbar-expand-md navbar2 bg-theme2 justify-content-start">
+            <nav className="navbar navbar-expand-md navbar2 bg-theme2 justify-content-start">
                 
                 <a href=" " className="btn border-0 bg-theme rounded navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
                     <b>Grocery</b>  
@@ -25,7 +25,7 @@ export default class Nav extends Component {
 
                 
 
-                <div class="collapse navbar-collapse">
+                <div className="collapse navbar-collapse">
                     
                     <a href=" " className="btn border-0 bg-theme navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
                         <b>Pharmaceuticals</b> 

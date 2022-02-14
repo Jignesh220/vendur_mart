@@ -3,10 +3,6 @@ import '../../component/layout.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'gatsby';
 
-import C4 from '../../images/c1.webp'
-import C5 from '../../images/c2.webp'
-import C6 from '../../images/c3.webp'
-
 export default class Caro extends Component {
   render() {
     return (
@@ -15,7 +11,7 @@ export default class Caro extends Component {
           <Link to="" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"
-              src={C4}
+              src={"https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/c1.webp?alt=media&token=e41275ef-c5fa-4ae9-8cee-a4f77c906825"}
               alt="First slide"
             />
           </Link>
@@ -28,7 +24,7 @@ export default class Caro extends Component {
           <Link to="" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"
-              src={C5}
+              src={"https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/c2.webp?alt=media&token=59877ed9-4660-4e2e-bbea-e89fb08676b5"}
               alt="Second slide"
             />
           </Link>
@@ -41,7 +37,7 @@ export default class Caro extends Component {
           <Link to="" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"
-              src={C6}
+              src={"https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/c3.webp?alt=media&token=8739873e-839b-414f-8cf4-e174f3d1cd50"}
               alt="Third slide"
             />
           </Link>

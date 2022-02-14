@@ -2,21 +2,21 @@ import React from 'react'
 
 export default function ProductImage() {
     return (
-        <section class="d-flex align-items-center min-vh-100 py-md-0 ">
-        <div class="css-eie263">
-        <div class="css-13fn3wg">
-           <nav aria-label="Secondary Navigation" class="css-1vgrevp list-unstyled">
-              <ul class="css-1iruc8t list-unstyled">
-                 <li class="css-1hvsri3" iconlabel="Conceptual">
+        <section className="d-flex align-items-center min-vh-100 py-md-0 ">
+        <div className="css-eie263">
+        <div className="css-13fn3wg">
+           <nav aria-label="Secondary Navigation" className="css-1vgrevp list-unstyled">
+              <ul className="css-1iruc8t list-unstyled">
+                 <li className="css-1hvsri3" iconlabel="Conceptual">
                     <a href="">
                        Conceptual Guides
                     </a>
-                    <ul class="css-1tsdhb9 list-unstyled">
+                    <ul className="css-1tsdhb9 list-unstyled">
                        <li  itemtype="overview"><a href="" >Overview</a></li>
                     </ul>
                  </li>
-                 <li class="css-1hvsri3" labeltext="">
-                    <ul class="css-1tsdhb9 list-unstyled">
+                 <li className="css-1hvsri3" labeltext="">
+                    <ul className="css-1tsdhb9 list-unstyled">
                        <li><a href="">Building with Components</a></li>
                        <li ><a href="">GraphQL Concepts</a></li>
                        <li ><a href="">Making Your Site Accessible</a></li>

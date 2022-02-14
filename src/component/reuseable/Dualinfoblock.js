@@ -19,11 +19,11 @@ export default function Dualinfoblock({heading, img, TopicTitle, Price, imgTitle
                         
                     </div>
                     <div className="col-4">
-                        <div class="card bg-theme rounded zoom" style={{ border: 'none' }}>
+                        <div className="card bg-theme rounded zoom" style={{ border: 'none' }}>
                             <img src={img}/>
-                            <div class="card-body">
-                                <h5 class="card-title text-warning">{imgTitle}</h5>
-                                <p class="card-text text-white">
+                            <div className="card-body">
+                                <h5 className="card-title text-warning">{imgTitle}</h5>
+                                <p className="card-text text-white">
                                     {iCaption}
                                 </p>
                             </div>

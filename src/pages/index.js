@@ -13,14 +13,14 @@ const IndexPage = () => {
       <HeaderDoc />
       <div className="card border-0">
         <img src={BackgroundImage} alt="" className="bkgimage" />
-        <div class="card-img-overlay text-light ml-5 mt-lg-5 mt-1 w-75 text-monospace lead">
-          <h5 class="card-title font-size-card">VendurMart</h5>
-          <p class="card-text ml-2 w-50 font-size-card2">
+        <div className="card-img-overlay text-light ml-5 mt-lg-5 mt-1 w-75 text-monospace lead">
+          <h5 className="card-title font-size-card">VendurMart</h5>
+          <p className="card-text ml-2 w-50 font-size-card2">
             We Provide B2B, C2C, B2C, C2C system for a better quality service
           </p>
           <button
             onClick={() => scrollTo("#explore")}
-            class="card-text ml-2 btn bg-light px-4 py-1 zoom1 font-size-card3"
+            className="card-text ml-2 btn bg-light px-4 py-1 zoom1 font-size-card3"
           >
             Explore
           </button>

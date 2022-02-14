@@ -1,4 +1,6 @@
-require('dotenv').config()
+require('dotenv').config({
+  path:`.env`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -20,21 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] }
     },
-    {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        credentials: {
-          apiKey: process.env.apiKey,
-          authDomain: process.env.authDomain,
-          databaseURL: process.env.databaseURL,
-          projectId: process.env.projectId,
-          storageBucket: process.env.storageBucket,
-          messagingSenderId: process.env.messagingSenderId,
-          appId: process.env.appId,
-          measurementId: process.env.measurementId,
-        }
-      }
-    },
+    
     // {
     //   resolve: `gatsby-source-strapi`,
     //   options: {
@@ -53,6 +41,20 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-  ],
-  
-};
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+				apiKey:process.env.SNIPCART_KEY,
+        autopop:true
+			}
+		}
+  ],  
+}

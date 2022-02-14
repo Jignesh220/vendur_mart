@@ -41,28 +41,28 @@ const Register = () => {
   return (
     <div>
     <HeaderDoc/>
-    <section class="d-flex align-items-center min-vh-100 py-md-0 "> 
-    <div class="card container shadow-lg borderRounded border-0 bg-light">
-        <div class="row d-flex align-items-center">
-            <div class="no-gutters">
+    <section className="d-flex align-items-center min-vh-100 py-md-0 "> 
+    <div className="card container shadow-lg borderRounded border-0 bg-light">
+        <div className="row d-flex align-items-center">
+            <div className="no-gutters">
                 <img
                     src={loginbackgroundSVG}
-                    class="img-fluid image-size borderRounded mx-auto login-card-img d-none d-lg-block"
+                    className="img-fluid image-size borderRounded mx-auto login-card-img d-none d-lg-block"
                     alt="Phone image"
                 />
             </div>
-            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 py-5 mx-auto">
+            <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1 py-5 mx-auto">
                 <center className="mb-3">
                     <div className="display-4">Register</div>
                 </center>
                 <form onSubmit={handleSubmit}>
-                  <div class="form-group">
-                      <label class="form-label pl-3" for="emailid">
+                  <div className="form-group">
+                      <label className="form-label pl-3" for="emailid">
                         Name
                       </label>
                       <input
                         type="name"
-                        class="form-control mt-1 borderRounded ps-3"
+                        className="form-control mt-1 borderRounded ps-3"
                         id="InputName"
                         placeholder="Enter Your Name"
                         onChange={(e) =>
@@ -71,14 +71,14 @@ const Register = () => {
                         required minLength={3}
                       />
                   </div>
-                    <div class="form-outline mb-4">
-                        <label class="form-label pl-3" for="emailid">
+                    <div className="form-outline mb-4">
+                        <label className="form-label pl-3" for="emailid">
                             Email address
                         </label>
                         <input
                             type="email"
                             id="emailid"
-                            class="form-control borderRounded button-design shadow-sm pl-4"
+                            className="form-control borderRounded button-design shadow-sm pl-4"
                             placeholder="E-mail Address"
                             onChange={(e) =>
                                 setForm({ ...form, email: e.target.value })
@@ -87,14 +87,14 @@ const Register = () => {
                         />
                     </div>
 
-                    <div class="form-outline mb-2">
-                        <label class="form-label pl-3" for="Password">
+                    <div className="form-outline mb-2">
+                        <label className="form-label pl-3" for="Password">
                             Password
                         </label>
                         <input
                             type="password"
                             id="Password"
-                            class="form-control borderRounded button-design shadow-sm pl-4"
+                            className="form-control borderRounded button-design shadow-sm pl-4"
                             placeholder="Password"
                             onChange={(e) => 
                               setForm({...form, password: e.target.value})
@@ -103,28 +103,28 @@ const Register = () => {
                         />
                     </div>
 
-                    <div class="d-flex justify-content-around align-items-center mb-2">
-                        <div class="form-check mt-2 ms-2">
-                            <input type="checkbox" class="form-check-input" required minLength={6}/>
-                            <label class="form-check-label" >
+                    <div className="d-flex justify-content-around align-items-center mb-2">
+                        <div className="form-check mt-2 ms-2">
+                            <input type="checkbox" className="form-check-input" required minLength={6}/>
+                            <label className="form-check-label" >
                                 <a href="/t&c" target="_blank">Terms And Conditions</a>
                             </label>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block button-design borderRounded">
+                    <button type="submit" className="btn btn-primary btn-block button-design borderRounded">
                         Sign in
                     </button>
                 </form>
                 <center>
                     <h5 className="mt-4 ms-2"> Sign in with </h5>
-                    <button class="bi bi-google border-0 borderRounded bg-light mt-1 icon text-danger" onClick={googleDirectLognin}></button> <span>    </span>
-                    <button class="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary"></button> <span>    </span>
-                    <button class="bi bi-apple border-0 borderRounded bg-light mt-1 icon text-secondary"></button> <span>    </span>
+                    <button className="bi bi-google border-0 borderRounded bg-light mt-1 icon text-danger" onClick={googleDirectLognin}></button> <span>    </span>
+                    <button className="bi bi-facebook border-0 borderRounded bg-light mt-1 icon text-primary"></button> <span>    </span>
+                    <button className="bi bi-apple border-0 borderRounded bg-light mt-1 icon text-secondary"></button> <span>    </span>
                 </center>
-                <center class="mt-3">
+                <center className="mt-3">
                     <span>Register already? </span>
-                    <Link to="/" class="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1 "> Login</Link>
+                    <Link to="/" className="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1 "> Login</Link>
                 </center>
             </div>
         </div>

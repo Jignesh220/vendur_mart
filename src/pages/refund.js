@@ -11,12 +11,12 @@ const RefundPage = () => {
     <HeaderDoc/>
       <div className="container-fluid">
         <div className="row my-2">
-          <div class="card col-10 mx-auto bg-light">
-            <div class="card-body">
-              <h5 class="card-title text-center">Refund Policy</h5>
-              <h6 class="card-subtitle mb-2 text-muted text-center">vendurmart</h6>
-              <p class="card-text"><Refund/></p>
-              <center><a href="https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/Return%20%26%20Refund%20Policy.pdf?alt=media&token=fdd7786b-d7e7-47cb-b0c0-8589a577207f" target="_blank" class=" text-center card-link btn border-0 bg-theme navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">Download Refund Policy</a></center>
+          <div className="card col-10 mx-auto bg-light">
+            <div className="card-body">
+              <h5 className="card-title text-center">Refund Policy</h5>
+              <h6 className="card-subtitle mb-2 text-muted text-center">vendurmart</h6>
+              <p className="card-text"><Refund/></p>
+              <center><a href="https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/Return%20%26%20Refund%20Policy.pdf?alt=media&token=fdd7786b-d7e7-47cb-b0c0-8589a577207f" target="_blank" className=" text-center card-link btn border-0 bg-theme navbar-brand text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">Download Refund Policy</a></center>
             </div>
           </div>
         </div>

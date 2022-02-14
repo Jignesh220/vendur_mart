@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import Logo from '../../images/3.png'
 import Logo2 from '../../images/fin.png'
 import Profile2 from '../../images/profile1.svg'
 import cart2 from '../../images/cart2.svg'
@@ -9,7 +8,7 @@ import search2 from '../../images/search2.svg'
 export default function Header() {
     return (
         <div id="header">
-            <nav class="navbar navbar-expand navbar-light bg-theme">
+            <nav className="navbar navbar-expand navbar-light bg-theme">
             <div className="zoom1" >
                 <Link to="/home" >
                     <img className="ms-5" src={Logo2} alt="VendurMart Logo" width="40px"/>
@@ -22,7 +21,7 @@ export default function Header() {
                         <img src={search2} alt="logo goes here mx-auto" width="25px"/>
                     </Link> 
 
-                    <Link to="" className="nav-link text-dark zoom">
+                    <Link to="/cart/" className="nav-link text-dark zoom">
                         <img src={cart2} alt="logo goes here mx-auto" width="30px"/>
                     </Link>
                     
