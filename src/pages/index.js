@@ -4,7 +4,6 @@ import Footer from "../component/reuseable/Footer";
 import BackgroundImage from "../images/bkgi.png";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import Carousel from 'react-bootstrap/Carousel';
 import '../component/layout.css'
 
 const IndexPage = () => {
