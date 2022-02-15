@@ -7,7 +7,7 @@ import IndexPage from '../../pages';
 function RedirectApp() {
     const [user] = useAuthState(auth);
     return (
-      user ? <Mainpage/> : <IndexPage/>
+      user ? <Mainpage/> : <Mainpage/>
     );
   }
     
