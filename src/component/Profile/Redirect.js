@@ -2,12 +2,13 @@ import React from 'react'
 import { auth } from '../../Firebase/firebase';
 import {useAuthState} from 'react-firebase-hooks/auth'
 import Mainpage from '../auth/Main';
-import IndexPage from '../../pages';
+import Demopage from './Demo';
+
 
 function RedirectApp() {
     const [user] = useAuthState(auth);
     return (
-      user ? <Mainpage/> : <IndexPage/>
+      user ? <Mainpage/> : <Demopage/>
     );
   }
     

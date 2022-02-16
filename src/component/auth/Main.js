@@ -11,7 +11,6 @@ import Footer from "../reuseable/Footer";
 const Mainpage = () => {
   const [users, setGetData] = useState();
   let currentUser = auth.currentUser;
-  let Name;
 
   const getUser = async () => {
     try {
