@@ -26,7 +26,7 @@ const IndexPage = () => {
         </div>
       </div>
       <br />
-      <div className="card border-0 bg-light py-5 borderRounded mx-5 mb-2 mt-4">
+      <div className="cd d-flex border-0 bg-light py-5 borderRounded mx-5 mb-2 mt-4">
         <div className="mx-auto">
           <div className="card-title lead text-light w-75 mx-auto text-dark text-monospace">
             Do you procrastinate to go to a shop? Or do you wish you could have
