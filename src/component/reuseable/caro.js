@@ -7,8 +7,8 @@ export default class Caro extends Component {
   render() {
     return (
       <Carousel>
-        <Carousel.Item interval={1000}>
-          <Link to="" alt="Grocery logo">
+        <Carousel.Item interval={3000}>
+          <Link to="/grocery" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"
               src={"https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/c1.webp?alt=media&token=e41275ef-c5fa-4ae9-8cee-a4f77c906825"}
@@ -20,7 +20,7 @@ export default class Caro extends Component {
             <b>Condiments, Grains and Bread, Oil & Fat, Dairy Product, etc</b>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
           <Link to="" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"
@@ -33,7 +33,7 @@ export default class Caro extends Component {
             <b>Computer accessories, Office products, Mobile accessories, etc</b>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={3000}>
           <Link to="" alt="Grocery logo">
             <img
               className="d-block w-100 mx-auto zoom1"

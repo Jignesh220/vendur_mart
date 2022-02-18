@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export default function Dualinfoblock({heading, img, TopicTitle, Price, imgTitle, iCaption, infomation }) {
     return (
-        <section className="my-4 py-4 bg-theme">
+        <section className="my-4 py-2 bg-theme borderRoundedCard mx-2">
             <div className="container">
                 <Heading title={heading}/>
                 <div className="row">

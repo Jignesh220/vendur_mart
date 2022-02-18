@@ -173,4 +173,6 @@
 .pImage{
   border-radius: 50%;
 }
-
+.borderRoundedCard{
+  border-radius: 40px;
+}

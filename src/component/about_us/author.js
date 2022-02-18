@@ -8,10 +8,10 @@ export default function author() {
         <div>
             <div className="col-9 mx-auto">
                 <Heading title="Authors" textcolor="text-color-theme"/>
-                <div className="row row-cols-1 row-cols-md-3 g-3">
+                <div className="row row-cols-1 row-cols-md-3 g-3 ">
                 <div className="col">
-                    <Link to="" className="card h-100 zoom1 shadow bg-theme rounded" style={{ textDecoration: 'none' }}>
-                    <div className="card-body text-white text-center">
+                    <Link to="" className="card h-100 zoom1 shadow bg-theme borderRounded" style={{ textDecoration: 'none' }}>
+                    <div className="card-body text-white text-center m-3">
                         <h5 className="card-title">Jignesh Baria</h5>
                         <p className="card-text">B.Tech-Computer Science Engineering</p>
                         <Link to="https://github.com/Jignesh220" className="btn bg-warning text-white btn-block" target="_blank">
@@ -21,8 +21,8 @@ export default function author() {
                     </Link>
                 </div>
                 <div className="col">
-                    <Link to="" className="card h-100 zoom1 shadow bg-theme rounded" style={{ textDecoration: 'none' }}>
-                    <div className="card-body text-white text-center">
+                    <Link to="" className="card h-100 zoom1 shadow bg-theme borderRounded" style={{ textDecoration: 'none' }}>
+                    <div className="card-body text-white text-center m-3">
                         <h5 className="card-title">Suzan Ghoniya</h5>
                         <p className="card-text">B.Tech-Computer Science Engineering</p>
                         <Link to="https://github.com/SuzanGhoniya" className="btn bg-warning text-white btn-block" target="_blank">
@@ -32,8 +32,8 @@ export default function author() {
                     </Link>
                 </div>
                 <div className="col">
-                    <Link to="https://github.com/rajshriii" className="card h-100 zoom1 shadow bg-theme rounded" style={{ textDecoration: 'none' }}>
-                    <div className="card-body text-white text-center">
+                    <Link to="https://github.com/rajshriii" className="card h-100 zoom1 shadow bg-theme borderRounded" style={{ textDecoration: 'none' }}>
+                    <div className="card-body text-white text-center m-3">
                         <h5 className="card-title">Rajshree Roy</h5>
                         <p className="card-text">B.Tech-Computer Science Engineering</p>
                         <Link to="https://github.com/rajshriii" className="btn bg-warning text-white btn-block" target="_blank">
