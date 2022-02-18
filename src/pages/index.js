@@ -39,7 +39,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid">
+      <div className="container-fluid" id="explore">
         <div className="row mt-3 bg-theme2 mx-5 borderR d-flex">
           <div className="mx-auto col-12 col-lg-6">
             <div className="col-10 col-lg-12 mx-auto lead text-monospace my-3 text-light text-center text-lg-left">

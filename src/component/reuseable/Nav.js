@@ -18,11 +18,11 @@ export default class Nav extends Component {
                     <b>Stationery</b> 
                 </a>
 
-                <button className="navbar-toggler" type="button" >
+                <Link className="navbar-toggler" type="button" >
                     <Link to="/all/" className="btn border-0 bg-theme text-fluid ms-5 text-size2 text-decoration-none text-light zoom1">
                         <b>All</b> 
                     </Link>
-                </button>
+                </Link>
 
                 
 
