@@ -5,7 +5,7 @@ import Footer from "../component/reuseable/Footer";
 import {useAuthState} from 'react-firebase-hooks/auth'
 import { auth } from "../Firebase/firebase";
 import '../component/layout.css'
-import Grocery from "../component/products/Grocery";
+import All from "../component/products/all";
 import { graphql } from "gatsby";
 
 const AllPage = ({data}) => {
@@ -13,7 +13,7 @@ const AllPage = ({data}) => {
   return (
     <section>
         {user?<Header/> : <HeaderDoc/>}
-        <Grocery tranding={data.tranding}/>
+        <All tranding={data.tranding}/>
         <Footer/>
     </section>
   );
@@ -29,7 +29,7 @@ export const query = graphql`
           price
           image {
             title
-            gatsbyImageData
+            gatsbyImageData(height: 200, width: 200)
             file {
               url
             }

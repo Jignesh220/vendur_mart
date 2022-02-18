@@ -12,40 +12,41 @@ export default class All extends Component {
   }
   render() {
     return (
-      <section>
-        <div className="col-10 mx-auto">
-          <div className="row row-cols-1 row-cols-md-4 g-4">
+      <section className="py-5">
+        <div className="container-fluid">
+          <div className="row mb-3 mx-5">
             {this.state.tranding.map(({ node }) => {
               return (
-                <div key={node.id}>
-                  <div className="col">
-                    <div
-                      className="card h-100 zoom1 shadow bg-white rounded"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <div className="zoom text-center p-3">
-                        <GatsbyImage
-                          image={node.image.gatsbyImageData}
-                          alt={node.image.title}
-                        />
-                      </div>
-                      <div className="card-body text-white text-center">
-                        <h5 className="card-title text-color-theme">
-                          {node.name}
-                        </h5>
-                        <p className="card-text text-color-theme2">
-                          Price: ₹{node.price}
-                        </p>
-                        <button
-                          data-item-id={node.id}
-                          data-item-name={node.name}
-                          data-item-price={node.price}
-                          data-item-url="https://vendur-mart.web.app/cart/"
-                          data-item-image={node.image.file.url}
-                          className="btn bg-theme text-white btn-block snipcart-add-item"
-                        >
-                          Add to cart
-                        </button>
+                <div
+                  key={node.id}
+                  className="card col-11 col-lg-5 d-flex mt-3 mb-3 mx-auto border-0 shadow-lg zoom1"
+                >
+                  <div className="row">
+                    <div className="col-10 col-md-4 my-3 mx-auto">
+                      <GatsbyImage
+                        image={node.image.gatsbyImageData}
+                        alt={node.image.title}
+                      />
+                    </div>
+                    <div className="col-10 col-md-6 mx-auto">
+                      <div className="flex-grow-1">
+                        <div className="d-flex justify-content-md-start mt-4 justify-content-center">
+                          <h5>{node.name}</h5>
+                        </div>
+                        <h6 className="d-flex justify-content-md-start text-success mt-2 justify-content-center">
+                          Price : ₹ {node.price}
+                        </h6>
+                        <div className="d-flex justify-content-md-start justify-content-center">
+                          <button
+                            data-item-id={node.id}
+                            data-item-name={node.name}
+                            data-item-price={node.price}
+                            data-item-url="https://vendur-mart.web.app/all/"
+                            data-item-image={node.image.file.url}
+                            className="btn bg-theme mt-4 zoom1 text-light px-3 snipcart-add-item mb-3 text-center"
+                          >
+                            Add to cart
+                          </button></div>
                       </div>
                     </div>
                   </div>
