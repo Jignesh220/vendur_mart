@@ -29,7 +29,7 @@ export const query = graphql`
           price
           image {
             title
-            gatsbyImageData
+            gatsbyImageData(height: 200, width: 200)
             file {
               url
             }

@@ -4,7 +4,7 @@ import Footer from "../component/reuseable/Footer";
 import BackgroundImage from "../images/bkgi.png";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import '../component/layout.css'
+import "../component/layout.css";
 
 const IndexPage = () => {
   return (
@@ -28,7 +28,7 @@ const IndexPage = () => {
       <br />
       <div className="card border-0 bg-light py-5 borderRounded mx-5 mb-2 mt-4">
         <div className="mx-auto">
-          <div className="card-title lead text-light w-75 mx-auto text-dark text-monospace">
+          <div className="card-title lead text-light w-75 mx-auto text-dark text-monospace font-size-card2">
             Do you procrastinate to go to a shop? Or do you wish you could have
             all goods delivered at your home from the nearest shops as you get
             your food? VendurMart will make sure to deliver what you want from
@@ -40,35 +40,39 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row mt-5" id="explore">
-          <div className="mx-auto">
-            <center>
-              <div className="display-4 mx-auto">Explore Website</div>
-            </center>
-          </div>
-        </div>
-        <div className="row mt-3 bg-theme2 mx-5 borderR ">
-          <div className="col-lg-7 mx-auto col-10 ml-lg-5">
-            <div className="mx-auto lead text-monospace my-3 text-light">
+        <div className="row mt-3 bg-theme2 mx-5 borderR d-flex">
+          <div className="mx-auto col-12 col-lg-6">
+            <div className="col-10 col-lg-12 mx-auto lead text-monospace my-3 text-light text-center text-lg-left">
               VendurMart Ecommerce
             </div>
           </div>
-          <div className="ccol-10 mx-auto col-lg-4">
-            <Link to="/home" className=" btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5">
-              Ecommerce
-            </Link>
+          <div className="mx-auto col-12 col-lg-4">
+            <div className="col-12 col-lg-12 mx-auto lead text-monospace text-light text-center text-lg-left">
+              <Link
+                to="/home"
+                className="btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5"
+              >
+                Ecommerce
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="row mt-3 bg-theme2 mx-5 borderR ">
-          <div className="col-lg-7 mx-auto col-10 ml-lg-5">
-            <div className="mx-auto lead text-monospace my-3 text-light">
+
+        <div className="row mt-3 bg-theme2 mx-5 borderR d-flex">
+          <div className="mx-auto col-12 col-lg-6">
+            <div className="col-10 col-lg-12 mx-auto lead text-monospace my-3 text-light text-center text-lg-left">
               VendurMart Bussiness
             </div>
           </div>
-          <div className="col-10 mx-auto col-lg-4">
-            <Link to="https://business-vendur-mart.web.app/" className=" btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5 text-center">
-              Bussiness
-            </Link>
+          <div className="mx-auto col-12 col-lg-4">
+            <div className="col-12 col-lg-12 mx-auto lead text-monospace text-light text-center text-lg-left">
+              <Link
+                to="https://business-vendur-mart.web.app/"
+                className="btn bg-warning py-1 zoom1 float-lg-right lead text-monospace my-3 text-dark borderR px-5"
+              >
+                Bussiness
+              </Link>
+            </div>
           </div>
         </div>
       </div>
