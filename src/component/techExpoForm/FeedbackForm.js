@@ -190,7 +190,6 @@ const FeedbackServey = () => {
           <div className="form-group">
             <label for="InputName">
               Would you list your business on Vendurmart?
-              <span className="text-danger"> *</span>
             </label>
             <br />
             <div className="mb-3">
@@ -212,7 +211,6 @@ const FeedbackServey = () => {
           <div className="form-group">
             <label for="InputName">
               Any suggestions or comments you would like to share with us?
-              <span className="text-danger"> *</span>
             </label>
             <br />
             <div className="mb-3">
