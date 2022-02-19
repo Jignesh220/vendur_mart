@@ -41,7 +41,7 @@ export default class Grocery extends Component {
                             data-item-id={node.id}
                             data-item-name={node.name}
                             data-item-price={node.price}
-                            data-item-url="https://vendur-mart.web.app/grocery/"
+                            data-item-url="https://vendur-mart.web.app/"
                             data-item-image={node.image.file.url}
                             className="btn bg-theme mt-4 zoom1 text-light px-3 snipcart-add-item mb-3 text-center"
                           >
