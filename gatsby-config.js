@@ -22,15 +22,6 @@ module.exports = {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] }
     },
-    
-    // {
-    //   resolve: `gatsby-source-strapi`,
-    //   options: {
-    //     apiURL: `http://localhost:1337`,
-    //     collectionTypes: [`products`],
-    //     queryLimit: 1000,
-    //   },
-    // },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
