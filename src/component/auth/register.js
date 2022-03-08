@@ -46,7 +46,7 @@ const Register = () => {
         <div className="row d-flex align-items-center">
             <div className="no-gutters">
                 <img
-                    src={loginbackgroundSVG}
+                    src={"https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/login.jpg?alt=media&token=6948a2ff-1eac-442c-a34e-e6948289f5a0"}
                     className="img-fluid image-size borderRounded mx-auto login-card-img d-none d-lg-block"
                     alt="Phone image"
                 />
@@ -113,7 +113,7 @@ const Register = () => {
                     </div>
 
                     <button type="submit" className="btn btn-primary btn-block button-design borderRounded">
-                        Sign in
+                        Sign up
                     </button>
                 </form>
                 <center>
@@ -124,7 +124,7 @@ const Register = () => {
                 </center>
                 <center className="mt-3">
                     <span>Register already? </span>
-                    <Link to="/" className="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1 "> Login</Link>
+                    <Link to="/home" className="border-0 text-decoration-none border-0 borderRounded bg-theme font-size1 text-light px-4 py-2 ms-3"> Login</Link>
                 </center>
             </div>
         </div>

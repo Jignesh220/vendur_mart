@@ -43,7 +43,7 @@ const Login = () => {
         <div className="row d-flex align-items-center">
             <div className="no-gutters">
                 <img
-                    src={loginbackgroundSVG}
+                    src={"https://firebasestorage.googleapis.com/v0/b/vendur-mart.appspot.com/o/login.jpg?alt=media&token=6948a2ff-1eac-442c-a34e-e6948289f5a0"}
                     className="img-fluid image-size shadow-lg borderRounded mx-auto login-card-img d-none d-lg-block"
                     alt="Phone image"
                 />
@@ -101,7 +101,7 @@ const Login = () => {
                 </center>
                 <center className="mt-3">
                     <span>Have you not Register yet? </span>
-                    <Link to="/register" className="border-0 borderRounded bg-dark text-light mt-1 text-secondary px-3 py-1 text-decoration-none pb-1"> Register</Link>
+                    <Link to="/register" className="border-0 text-decoration-none border-0 borderRounded bg-theme font-size1 text-light px-4 py-2 ms-3"> Register</Link>
                 </center>
             </div>
         </div>
