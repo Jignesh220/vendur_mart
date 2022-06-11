@@ -34,7 +34,7 @@ export const register = async ({ email, password, customerName }) => {
       Name: customerName,
       Password: password
     }).catch(alert);
-    return res;
+    return resp;
   }
 }
 
